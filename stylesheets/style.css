@@ -13,7 +13,20 @@ footer {
   width: 8rem;
   height: 8rem;
   font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: 0.5s;
+  
 }
+
+#click:hover{
+ 
+  height: 10rem;
+  width: 10rem;
+}
+
+
 
 #msgbox {
   width: 100%;
@@ -45,6 +58,8 @@ footer {
 .card:hover {
   background-color:seashell;
 }
+
+
 
 .title {
   font-weight: 600;

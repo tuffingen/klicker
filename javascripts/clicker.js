@@ -91,20 +91,31 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
   {
-    name: 'Arg gubbe',
+    name: 'Tant ',
     cost: 10,
     amount: 1
   },
   {
-    name: 'Internettroll',
+    name: 'litet konditori',
     cost: 100,
     amount: 10
   },
   {
-    name: 'Twitterbot',
+    name: 'övergiven wienerbrödfabrik',
     cost: 1000,
     amount: 100
+  },
+  {
+    name: 'Nisses stora konditori',
+    cost: 10000,
+    amount: 1000
+  },
+  {
+    name: 'Stora munkfabriken',
+    cost: 100000,
+    amount: 10000
   }
+
 ]
 
 /* createCard är en funktion som tar ett upgrade objekt som parameter och skapar
@@ -132,8 +143,8 @@ function createCard(upgrade) {
   header.classList.add('title');
   const cost = document.createElement('p');
 
-  header.textContent = upgrade.name + ', +' + upgrade.amount + ' likes per sekund.';
-  cost.textContent = 'Köp för ' + upgrade.cost + ' likes';
+  header.textContent = upgrade.name + ', +' + upgrade.amount + ' fikabröd per sekund.';
+  cost.textContent = 'Köp för ' + upgrade.cost + ' fikabröd';
 
   card.addEventListener('click', (e) => {
     if (money >= upgrade.cost) {
