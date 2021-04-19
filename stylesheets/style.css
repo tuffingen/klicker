@@ -1,4 +1,11 @@
 /* elements */
+body{
+  background-image: url(/Restaurant-Accounting-young-male-baker-baking-money.jpg);
+  background-size: cover;
+
+}
+
+
 img {
   max-width: 100%;
 }
@@ -16,17 +23,17 @@ footer {
   border: none;
   outline: none;
   background-color: transparent;
-  transition: 0.5s;
+  transition: none;
+ 
   
 }
 
-#click:hover{
- 
-  height: 10rem;
-  width: 10rem;
+
+
+#click:active{
+  height: 7rem;
+  width: 7rem;
 }
-
-
 
 #msgbox {
   width: 100%;
@@ -50,13 +57,16 @@ footer {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  border: 1px solid black;
-  margin: .5rem 0;
+  margin: .1rem 0;
   padding: .5rem;
+  background-color: rgba(133, 133, 133, 0.616);
+  height: 5rem;
+  
+  
 }
 
 .card:hover {
-  background-color:seashell;
+  background-color:rgb(194, 188, 183);
 }
 
 
@@ -95,7 +105,6 @@ footer {
 }
 
 .row {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
@@ -110,12 +119,11 @@ footer {
 }
 
 .container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
+  width: 30%;
   padding-right: 1rem;
-  margin-top: 8rem;
+  margin-top: none;
+  background-color: rgba(61, 61, 61, 0.74);
+  height: 100%;
 }
 
 @media (min-width: 576px) {
