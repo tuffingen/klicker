@@ -56,8 +56,8 @@ function step(timestamp) {
   mpsTracker.textContent = moneyPerSecond;
   followerTracker.textContent = moneyPerClick;
 
-  if (timestamp >= last + 1000) {
-    money += moneyPerSecond;
+  if (timestamp >= last + 1000/60) {
+    money += moneyPerSecond/60;
     last = timestamp;
   }
   window.requestAnimationFrame(step);
@@ -154,7 +154,7 @@ function createCard(upgrade) {
       upgrade.cost *= 1.5;
       cost.textContent = 'Köp för ' + upgrade.cost + ' likes';
       moneyPerSecond += upgrade.amount;
-      message('Grattis du har en ny följare!', 'success');
+      message('Du har köpt en ny fikabrödstillverkare!', 'success');
     } else {
       message('Du har inte råd.', 'warning');
     }
